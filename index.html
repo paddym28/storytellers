@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/hover.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <title>Story Tellers</title>
+
+</head>
+
+<body>
+    <header>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background-color: #4834DF;">
+        <div class="container">
+            <a class="navbar-brand ml-4" href="index.html" style="font-size:40px;">Story Tellers</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-left text-white mr-5"
+                            href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-left text-white mr-5" href="#" target="_blank"
+                            rel="noreferrer noopener">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-left text-white mr-5" href="videos.html" target="_blank"
+                            rel="noreferrer noopener">VIDEOS</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-left text-white" href="#" target="_blank"
+                            rel="noreferrer noopener">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="intro">
+        <div class="container">
+            <h1 class="mt-4 mb-3"></h1>
+            <!-- Intro Content -->
+            <div class="row">
+                <div class="col-lg-6 p-5">
+                    <h4>hello !!!</h4>
+                    <h1>Welcome to Story Tellers</h1>
+                    <h4>चालो कहनी सुनते हैं , कहनी पुरानो सी चूनी हुई </h4>
+                    <h4>दादा दादी से सुनी हुई , किताबो से पढी हुई</h4>
+                    <a href="videos.html" class="btn btn-primary btn-lg mr-4 mt-3">Lets go</a>
+                    <a href="videos.html" class="btn btn-primary btn-lg mt-3">आओ शुरू करें</a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img class="img-fluid rounded mb-4" src="images/video_upload.png" alt="">
+                </div>
+                
+            </div>
+    </section>
+</header>
+
+    <!-- <footer>
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-center">© 2020 Story Tellers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- <button class="btn btn-secondary scroll-top" data-scroll="up" type="button">
+        <i class="fa fa-chevron-up"></i>
+    </button> -->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scroll-top').fadeIn();
+                } else {
+                    $('.scroll-top').fadeOut();
+                }
+            });
+
+            $('.scroll-top').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 100);
+                return false;
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
